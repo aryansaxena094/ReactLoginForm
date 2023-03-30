@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "./Input";
 
-function Form() {
+function Login() {
     return (
         <form className="form">
             <Input type = "text" placeholder="Username" />
@@ -11,5 +11,5 @@ function Form() {
         );
     }
     
-    export default Form;
+    export default Login;
     
