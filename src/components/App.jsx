@@ -3,18 +3,10 @@ import Login from "./Login";
 
 var isLoggedIn = false;
 
-function renderConditional() {
-if (isLoggedIn===true){
-  return <h1>Hello</h1>;
-} else {
-  return <Login />;
-}
-}
-
 function App() {
   return (
     <div className="container">
-      {renderConditional()}
+      {isLoggedIn === true ? <h1>Hello</h1> : <Login />}
     </div>
   );
 }
